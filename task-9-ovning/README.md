@@ -11,8 +11,8 @@ Skapa ett nytt issue med titeln `help`, så får ni mer detaljer.
 * Info om DD1338
 * Genomgång `task-9`
 * Nytt i `task-10`
-* Olika sätt att testa
-* Kodningsövning: testning
+* Repetition av testning
+* Kodningsövning: rekursion
 
 ### **Info om DD1338 (Algoritmer och datastrukturer)**
 
@@ -100,9 +100,9 @@ Om vi dissikerar raden så består den av:
 * `MyClassTest` är testklassens namn.
 
 ### **Kodningsövning: rekursion**
-I veckans övning ska vi repetera rekursion. Som en påminnelse är rekursion *något som definieras i termer av sig självt*. Er uppgift är helt enkelt att implementera metoderna i kodskelettet i klassen `RecursionExercises.java`.
+I veckans övning ska vi repetera rekursion. Som en påminnelse är rekursion *något som definieras i termer av sig självt*. Er uppgift är helt enkelt att implementera metoderna i kodskelettet i klassen [`RecursiveExercises.java`](RecursiveExercises.java). För att testa er kod kan ni köra testerna i [`RecursiveExercisesTest.java`](RecursiveExercisesTest.java).
 
-Rekursion brukar delas in i **basfall** och **rekursionssteg**, vilket påminner lite om induktion. Rekursionen säger hur vi ska beräkna nästa steg och basfallet säger när vi ska sluta, så att vi inte får *oändlig* rekursion.
+Lite kort repetition. Rekursion brukar delas in i **basfall** och **rekursionssteg**, vilket påminner lite om induktion. Rekursionen säger hur vi ska beräkna nästa steg och basfallet säger när vi ska sluta, så att vi inte får *oändlig* rekursion.
 
 Först exemplet i [den här videon](https://www.youtube.com/watch?v=ngCos392W4w&ab_channel=Reducible) ger en bra introduktion.
 
@@ -110,7 +110,6 @@ Först exemplet i [den här videon](https://www.youtube.com/watch?v=ngCos392W4w&
 > Skriv ner olika exempel och försök hitta mönster som ni kan använda som basfall och rekursion i er kod.
 
 ### **Sammanfattning**
-* DD1338 nästa övning!
+* DD1338
 * Testning
-* Köra JUnit
-* TDD
+* Rekursion
