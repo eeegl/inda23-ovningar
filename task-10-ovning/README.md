@@ -1,10 +1,18 @@
-# **Övning 10 – Search & Sort**
+# **Övning 10 – Start på DD1338**
+
+
+### **Allmänt**
+Kursinfo finns på canvassidan, jag har sammanställt det viktigaste i [README:n från övning 9](https://github.com/eeegl/inda23-ovningar/tree/main/task-9-ovning#info-om-dd1338-algoritmer-och-datastrukturer).
+
+---
 
 ### **Idag**
 * Repetition + diskussion
 * Genomgång av `task-10`
 * Nytt i `task-11`: sortering
 * Kodningsövning: sorteringsalgoritm
+
+---
 
 ### **Kodkommentarer**
 I Java finns tre olika typer av kommentarer:
@@ -71,6 +79,8 @@ public LinkedList<String> strList; // Listan innehåller element av typen String
 * Vad har varit svårt?
 * Andra tankar?
 * Redovisning
+
+---
 
 ### **Vad kommer i `task-11`?**
 * Comparable
@@ -160,6 +170,8 @@ Gör en egen implementering av instickssortering i Java. Utgå från kodskelette
 > *Tips:*
 > * Försök att översätta pseudokoden till Java.
 > * Implementera den givna `swap()`-metoden för att göra koden mer lättläslig.
+
+--- 
 
 ### **Sammanfattning**
 * Kommentarer, konstanter och generics
