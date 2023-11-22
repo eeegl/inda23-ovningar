@@ -23,7 +23,6 @@ och ska inte ha några mellanrum efter kommentaren.
 ```java
 /** <--- OBS: två asterisker (**)
  * Det här är en Javadoc-kommentar.
- * 
  */
 public void method() { // Det här är en enradskommentar
     /* <--- OBS: en asterisk (*)
@@ -38,18 +37,15 @@ Konstanter gör koden säkrare och lättare att ändra. Vi kan skapa en konstant
 * Nyckelordet `static` gör att endast en version av variabeln existerar
 * Nyckelordet `final` gör att variabeln inte får ändras (måste därför initialiseras direkt)
 * Fältnamnet skrivs konventionellt med versaler och understreck mellan ord
-* Gör koden mer lätthanterlig eftersom vi bara behöver ändra på ett ställe
+* Koden blir mer lätthanterlig eftersom vi bara behöver ändra på ett ställe
 
 #### **Exempel:**
 
 ```java
-// Heltalskonstant
-private static final int MAX_ITERATIONS = 100;
-// Stränkonstant
-private static final String FILE_PATH = "path/to/my/file.txt";
+private static final int MAX_ITERATIONS = 100; // Heltalskonstant
+private static final String FILE_PATH = "path/to/my/file.txt"; // Stränkonstant
 
-
-// Användning i en loop
+/* Användning i en loop */
 for (int i = 0; i < MAX_ITERATIONS; i++) {
     // ...
 }
@@ -59,7 +55,7 @@ for (int i = 0; i < MAX_ITERATIONS; i++) {
 Parametriserade typer är när en typ tar en annan typ som argument. I Java kallas det för *generics*. Ett exempel är `LinkedList`:
 
 ```java
-// Dessa två är olika typer
+/* Dessa två är olika typer */
 public LinkedList<Integer> intList; // Listan innehåller element av typen Integer
 public LinkedList<String> strList; // Listan innehåller element av typen String
 ```
@@ -87,7 +83,7 @@ I Java är [`Comparable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Co
 
 > *Ett interface är ett kontrakt som **garanterar** viss **funktionalitet**.*
 
-Och vad innebär det då? Jo, interfacet `Comparable` garanterar att objekt kan jämföras med `compareTo()`-metoden. Och kan vi jämföra dem så kan vi även *ordna* dem, vilket kommer väl till pass för både **sortering** och **sökning**. Vi signalerar att en klass implementerar ett interface med nyckelordet `implements` och sen överskuggar vi `compareTo()` och gör vår egen implementation.
+Och vad innebär det då? Jo, interfacet `Comparable` garanterar att objekt kan jämföras med `compareTo()`-metoden. Och kan vi jämföra dem så kan vi även *ordna* dem, vilket kommer väl till pass för både **sortering** och **sökning**. Vi signalerar att en klass implementerar ett interface med nyckelordet `implements` och sen överskuggar vi `compareTo()` och gör vår egen implementering.
 
 #### **Exempel:**
 
@@ -111,7 +107,7 @@ Hur ska vi då implementera `compareTo()`? Helt enkelt så att returvärdet är 
 | `x.compareTo(y) > 0`        | `x` är större än `y` |
 
 ### **Kort om tidskomplexitet och ordonotation**
-Tidskomplexitet beskriver hur mycket längre tid en algoritm tar när indatan blir större. Vi räknar oftast med värsta fallet (allt annat är bonus).
+Tidskomplexitet beskriver hur mycket längre **tid en algoritm tar** när **indatan blir större**. Vi räknar oftast med värsta fallet (allt annat är bonus).
 
 Vi noterar tidskomplexitet med $O(n)$ (uttalas "ordo av $n$"), där det som står inom parentes är *högstagradstermen* i algoritmen. På engelska kallas notationen "big O".
 
@@ -122,13 +118,13 @@ Vi noterar tidskomplexitet med $O(n)$ (uttalas "ordo av $n$"), där det som stå
 | $O(\log n)$ | Logaritmisk     | Bra             | Binärsökning i en sorterad lista |
 | $O(n)$      | Linjär          | Ganska bra      | Genomsökning av en lista |
 | $O(n^2)$    | Kvadratisk      | Ofta bästa möjliga | Urvalssortering            |
-| $O(n!)$     | Fakultetisk     | Inte bra        | I "brute force"-lösningar på grafproblem |
+| $O(n!)$     | Fakultetisk     | Inte bra        | "Brute force"-lösningar på grafproblem |
 
 
 
 #### **Fråga:**
 
-Vad är tidskomplexiteten för $32x^3 + 5x^2 - 23$?
+Vad är tidskomplexiteten för $32x^3 + 5x^2 - 23$ i ordonotation?
 
 
 ### **Kort om pseudokod**
@@ -163,7 +159,7 @@ Gör en egen implementering av instickssortering i Java. Utgå från kodskelette
 
 > *Tips:*
 > * Försök att översätta pseudokoden till Java.
-> * Gör en `swap()`-metoden för att göra koden mer lättläslig.
+> * Implementera den givna `swap()`-metoden för att göra koden mer lättläslig.
 
 ### **Sammanfattning**
 * Kommentarer, konstanter och generics
