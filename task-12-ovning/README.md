@@ -36,7 +36,9 @@ Ett exempel för att förklara vikten av inkapsling: tänk er att varje gång ni
 
 > OBS: i det här sammanhanget är interface ett generellt begrepp, och inte detsamma som nyckelordet `interface` i Java.
 
-Hittills har vi bara använt `public` och `private`, men det finns två till: `protected` och *package-private* (har inget nyckelord utan används genom att inte skriva ut någon åtkomstmodifierare). Den här tabellen visar de olika åtkomsterna:
+### **Åtkomstmodifierare**
+
+För att uppnå inkapsling använder vi åtkomstmodifierare, som begränsar vem som kan använda olika fält och metoder. Hittills har vi bara använt `public` och `private`, men det finns två till: `protected` och *package-private* (har inget nyckelord utan används genom att inte skriva ut någon åtkomstmodifierare). Den här tabellen visar de olika åtkomsterna:
 
 | Åtkomstmodifierare | Klass | Paket | Subklass | Värld | Beskrivning |
 |--------------------|------|--------|---------|------|---|
