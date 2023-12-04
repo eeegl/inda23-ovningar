@@ -40,10 +40,10 @@ Hittills har vi bara använt `public` och `private`, men det finns två till: `p
 
 | Åtkomstmodifierare | Klass | Paket | Subklass | Värld | Beskrivning |
 |--------------------|------|--------|---------|------|---|
-| `public`           | Ja   | Ja     | Ja      | Ja   | Åtkomligt från vilken annan klass som helst. |
-| `protected`        | Ja   | Ja     | Ja      | Nej  | Åtkomligt i samma paket och subklass. |
-| *package-private*  | Ja   | Ja     | Nej     | Nej  | Åtkomligt endast inom samma paket. |
-| `private`          | Ja   | Nej    | Nej     | Nej  | Åtkomligt endast inom klassen själv. |
+| `public`           | ✅   | ✅     | ✅      | ✅   | Åtkomligt från vilken annan klass som helst. |
+| `protected`        | ✅   | ✅     | ✅      | ❌  | Åtkomligt i samma paket och subklass. |
+| *package-private*  | ✅   | ✅     | ❌     | ❌  | Åtkomligt endast inom samma paket. |
+| `private`          | ✅   | ❌    | ❌     | ❌  | Åtkomligt endast inom klassen själv. |
 
 **Förklaring av kolumnerna**
 - **Klass**: Klassen där medlemmarna deklareras.
