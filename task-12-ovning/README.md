@@ -35,32 +35,23 @@ Arv (engelska: inheritance) är ett allmänt koncept inom OOP, som innebär att 
 ```
 **Figur 1:** *Arvsrelationen mellan klasserna `Djur`, `Katt` och `Hund`.*
 
-> *"Alla katter är djur, men alla djur är inte katter."* - Örn Segerstedt, 2023
-
 ### **Inkapsling**
 Ett viktigt begrepp som bland annat kan kopplas till arv inom OOP är *inkapsling* (engelska: encapsulation), vilket innebär att vi gömmer olika implementationsdetaljer i våra klasser från användare av klassen. Istället erbjuder vi ett *gränssnitt* (engelska: interface) för användaren. Detta kallas ibland för API (Application Programming Interface).
 
 Ett exempel för att förklara vikten av inkapsling: tänk er att varje gång ni stoppade in en sladd i eluttaget skulle ni behöva göra alla kopplingar själva, jorda och så vidare. Det skulle bli alldeles för krångligt, och kanske till och med farligt. Därför har kopplingarna redan implementerats, och istället erbjuds gränssnittet *eluttag* som förenklar användningen och gör den säkrare. Notera att detta gränssnitt kan variera (till exempel har USA och Sverige olika eluttag).
 
-> ⚠️ OBS ⚠️ \
-> I det här sammanhanget är interface ett generellt begrepp, och inte detsamma som nyckelordet `interface` i Java.
+> ⚠️ OBS: I det här sammanhanget är interface ett generellt begrepp, och inte detsamma som nyckelordet `interface` i Java.
 
 ### **Åtkomstmodifierare**
 
 För att uppnå inkapsling använder vi åtkomstmodifierare, som begränsar vem som kan använda olika fält och metoder. Hittills har vi bara använt `public` och `private`, men det finns två till: `protected` och *package-private* (har inget nyckelord utan används genom att inte skriva ut någon åtkomstmodifierare). Den här tabellen visar de olika åtkomsterna:
 
-| Åtkomstmodifierare | Klass | Paket | Subklass | Värld | Beskrivning |
+| Åtkomstmodifierare | Klass | Paket | Subklass | Alla | Beskrivning |
 |--------------------|------|--------|---------|------|---|
 | `public`           | ✅   | ✅     | ✅      | ✅   | Åtkomligt från vilken annan klass som helst. |
 | `protected`        | ✅   | ✅     | ✅      | ❌  | Åtkomligt i samma paket och subklass. |
 | *package-private*  | ✅   | ✅     | ❌     | ❌  | Åtkomligt endast inom samma paket. |
 | `private`          | ✅   | ❌    | ❌     | ❌  | Åtkomligt endast inom klassen själv. |
-
-**Förklaring av kolumnerna**
-- **Klass**: Klassen där medlemmarna deklareras.
-- **Paket**: Andra klasser i samma paket.
-- **Subklass**: Klasser som ärver från klassen, oavsett paket.
-- **Värld**: Alla klasser från vilket paket som helst.
 
 ### **💬 Diskussion**
 * Försök komma på några egna exempel på inkapsling (kan vara vad som helst)
@@ -145,7 +136,11 @@ FlyingFish   Mudskipper
 
 Skapa även en `Main`-klass med en `main`-metod, där ni skapar ett objekt för varje klass (utom `Main` själv) och printar alla metoder för varje objekt.
 
-När alla metoder funkar som de ska, testa att printa `eat()` för `FlyingFish` och `Mudskipper`. De borde printa samma som för `Animal`. Överskugga sedan metoden i `FlyingFish` (använd `@Override`) och printa istället `"FlyingFish NAME is eating. Mmmmm, tasty flies!"`. Testa att printa för båda igen och se om det blir någon skillnad.
+När alla metoder funkar som de ska, testa att printa `eat()` för `FlyingFish` och `Mudskipper`. De borde printa samma som för `Animal`. Överskugga sedan metoden i `Fish` så att den printar `Fish {NAME} is eating. Mmmmm, blub.` (använd `@Override`). Se om det blir någon skillnad när ni anropar `eat()` med `FlyingFish` och `Mudskipper`.
+
+Nu ska ni överskugga `eat()` för både `FlyingFish` och `Mudskipper`, som ska printa `FlyingFish {NAME} is eating. Mmmmm, tasty flies!` och `Mudskipper {NAME} is eating. Mmmmmud.`. Testa att printa för båda igen och se vad resultatet blir.
+
+Sist ska ni skapa en lista av typen `List<Animal>` som innehåller olika typer av djur (ni kan extenda `Animal` med fler klasser om ni vill). Iterera sedan över hela listan och anropa `eat()` för varje djur. Vad blir resultatet?
 
 Visa mig när ni är klara, sen kan ni börja med `task-13` om ni hinner!
 
