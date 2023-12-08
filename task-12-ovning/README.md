@@ -1,40 +1,49 @@
 # **Övning 12 – Time complexity**
 
 ### **Idag**
+* Sista övningen för året!
 * Genomgång `task-12`
-* Nya koncept i `task-13`: arv och induktionsbevis
+* Kommer i `task-13`
+    * Induktionsbevis
+    * Arv
 * Inkapsling
 * Åktomstmodifierare
 * Julfika
 
-### **💬 Diskussion `task-12`**
-* Diskutera parvis hur ni har löst uppgiften
-* Fokusera på det som var svårast
 
 ### **Genomgång `task-12`**
-* Hur har det gått?
-* Vad har varit svårt?
+* Diskutera parvis hur ni har löst uppgiften
+    * Vad har varit svårast?
+    * Vad har ni gjort lika/olika?
 * Redovisning
 
 ### **En titt på `task-13`**
 * Arv (inheritance)
 * Induktionsbevis
-
-### **Kort om induktionsbeviset**
-* Skriv tydligt och prydligt!
-* Gärna i $\LaTeX$, men det är inget krav
+    * Skriv tydligt och prydligt!
+    * Gärna i $\LaTeX$, men det är inget krav
 
 ### **Vad är arv?**
-> *"Alla fiskar är djur, men alla djur är inte fiskar."* - Örn Segerstedt, 2023
+Arv (engelska: inheritance) är ett allmänt koncept inom OOP, som innebär att subklasser får (ärver) egenskaper och beteenden från sina superklasser. Till exempel är katter och hundar subklasser till klassen djur. Alla djur äter, så katter och hundar ärver det beteendet. Men de äter olika saker, så deras *implementering* av ätande-beteendet är olika. Vi kan illustrera arvshierarkin med ett träddiagram:
 
-Arv (engelska: inheritance) är ett allmänt koncept inom OOP, som innebär att subklasser får (ärver) egenskaper från sina superklasser. Till exempel är katter och hundar subklasser till klassen djur. Alla djur äter, så hundar och katter ärver det beteendet. Men katter äter möss och hundar äter i princip vad som helst (?) så deras *implementering* av ätande-beteendet är olika. Vi kan illustrera arvshierarkin med ett träddiagram.
+```
+        Djur
+         |
+      ––––––––
+     |        |
+   Katt      Hund
+```
+**Figur 1:** *Arvsrelationen mellan klasserna `Djur`, `Katt` och `Hund`.*
+
+> *"Alla katter är djur, men alla djur är inte katter."* - Örn Segerstedt, 2023
 
 ### **Inkapsling**
 Ett viktigt begrepp som bland annat kan kopplas till arv inom OOP är *inkapsling* (engelska: encapsulation), vilket innebär att vi gömmer olika implementationsdetaljer i våra klasser från användare av klassen. Istället erbjuder vi ett *gränssnitt* (engelska: interface) för användaren. Detta kallas ibland för API (Application Programming Interface).
 
 Ett exempel för att förklara vikten av inkapsling: tänk er att varje gång ni stoppade in en sladd i eluttaget skulle ni behöva göra alla kopplingar själva, jorda och så vidare. Det skulle bli alldeles för krångligt, och kanske till och med farligt. Därför har kopplingarna redan implementerats, och istället erbjuds gränssnittet *eluttag* som förenklar användningen och gör den säkrare. Notera att detta gränssnitt kan variera (till exempel har USA och Sverige olika eluttag).
 
-> OBS: i det här sammanhanget är interface ett generellt begrepp, och inte detsamma som nyckelordet `interface` i Java.
+> ⚠️ OBS ⚠️ \
+> I det här sammanhanget är interface ett generellt begrepp, och inte detsamma som nyckelordet `interface` i Java.
 
 ### **Åtkomstmodifierare**
 
@@ -106,31 +115,33 @@ public class Dog extends Animal {
 }
 ```
 
-### **Julfika**
+### **🎅 Julfika 🧑‍🎄**
 Detta är sista övningen innan ledigheten, så vi tar lite fika!
 
 ### **Kodningsövning**
 I veckans uppgift kommer ni att få öva på arv. Börja med att skapa klasserna `Animal`, `Fish`, `FlyingFish` och `Mudskipper`. Klassen `Animal` ska ha ett fält `name` med tillhörande getter och setter. Utöver detta ska klasserna även ha följande:
 
-`Animal`
-* En konstruktor som har en parameter för `name`-fältet
-* Metoden `eat()` som printar `Animal NAME is eating. Mmmmm.`
+| Klass        | Konstruktor                         | Metoder                                 |
+|--------------|-------------------------------------|-----------------------------------------|
+| `Animal`       | En konstruktor med `name`-parameter | `eat()` : Printar `Animal {NAME} is eating. Mmmmm.` |
+| `Fish`         | -                                   | `swim()` : Printar `Fish {NAME} is swimming. Blub blub.` |
+| `FlyingFish`   | -                                   | `fly()` : Printar `FlyingFish {NAME} is flying. Wohooo!` |
+| `Mudskipper`   | -                                   | `crawl()` : Printar `Mudskipper {NAME} is crawling. ....` |
 
-`Fish`
-* Metoden `swim()` som printar `Fish NAME is swimming. Blub blub.`
-
-`FlyingFish`
-* Metoden `fly()` som printar `FlyingFish NAME is flying. Wohooo!`
-
-`Mudskipper`
-* Metoden `crawl()` som printar `Mudskipper NAME is crawling. ....`
-
-> OBS: `NAME` ska bytas ut mot namnet som sparas i `name`-fältet.
+> I exemplen ovan ska `{NAME}` bytas ut mot namnet som sparas i `name`-fältet.
 
 Klasserna ska ärva av varandra enligt följande:
 
-* `Fish` ärver från `Animal`
-* `FlyingFish` och `Mudskipper` ärver från `Fish`
+```
+        Animal
+          |
+         Fish
+          |
+      –––––––––––
+     |           |
+FlyingFish   Mudskipper
+```
+**Figur 2:** *Arvsrelationen mellan klasserna `Animal`, `Fish`, `FlyingFish` och `Mudskipper`.*
 
 Skapa även en `Main`-klass med en `main`-metod, där ni skapar ett objekt för varje klass (utom `Main` själv) och printar alla metoder för varje objekt.
 
