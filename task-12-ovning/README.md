@@ -134,13 +134,13 @@ FlyingFish   Mudskipper
 ```
 **Figur 2:** *Arvsrelationen mellan klasserna `Animal`, `Fish`, `FlyingFish` och `Mudskipper`.*
 
-Skapa även en `Main`-klass med en `main`-metod, där ni skapar ett objekt för varje klass (utom `Main` själv) och printar alla metoder för varje objekt.
+Skapa även en `Main`-klass med en `main`-metod, där ni skapar ett objekt för varje klass (utom `Main` själv) och printar alla metoder för varje objekt. Vad printas när ni kör `eat()` för `FlyingFish` och `Mudskipper`? Varför?
 
-När alla metoder funkar som de ska, testa att printa `eat()` för `FlyingFish` och `Mudskipper`. De borde printa samma som för `Animal`. Överskugga sedan metoden i `Fish` så att den printar `Fish {NAME} is eating. Mmmmm, blub.` (använd `@Override`). Se om det blir någon skillnad när ni anropar `eat()` med `FlyingFish` och `Mudskipper`.
+Överskugga metoden i `Fish` så att den printar `Fish {NAME} is eating. Mmmmm, blub.` (använd `@Override`). Blir det någon skillnad när ni anropar `eat()` med `FlyingFish` och `Mudskipper`? Varför?
 
 Nu ska ni överskugga `eat()` för både `FlyingFish` och `Mudskipper`, som ska printa `FlyingFish {NAME} is eating. Mmmmm, tasty flies!` och `Mudskipper {NAME} is eating. Mmmmmud.`. Testa att printa för båda igen och se vad resultatet blir.
 
-Sist ska ni skapa en lista av typen `List<Animal>` som innehåller olika typer av djur (ni kan extenda `Animal` med fler klasser om ni vill). Iterera sedan över hela listan och anropa `eat()` för varje djur. Vad blir resultatet?
+Sist ska ni skapa en lista av typen `List<Animal>` som innehåller olika typer av djur (ni kan extenda `Animal` med fler klasser om ni vill). Iterera sedan över hela listan och anropa `eat()` för varje djur. Vad printas och varför?
 
 Visa mig när ni är klara, sen kan ni börja med `task-13` om ni hinner!
 
