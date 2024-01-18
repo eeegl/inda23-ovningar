@@ -4,6 +4,14 @@
 
 Hoppas att alla har haft en fin ledighet.
 
+## Dagordning
+
+- Sammanfattning HT
+- Överblick VT
+- Redovisning `task-13`
+- Nytt i `task-14`
+- Kodningsuppgift
+
 ## Sammanfattning av HT 2023
 
 #### DD1337
@@ -94,18 +102,20 @@ Java har [två typer av nästlade klasser](https://docs.oracle.com/javase/tutori
 ### Länkad lista
 - Består av sammanlänkade noder.
 - Varje nod innehåller data och en pekare till nästa nod.
-- Sista noden pekar på `null` för att visa att inga fler element finns i listan.
+- Sista noden pekar på NULL för att visa att inga fler element finns i listan.
 - I Java finns klassen `LinkedList`.
 - I er implementation ska ni använda en nästlad klass (statisk nästlad klass) för noderna.
 
 Visualisering finns [här](https://antoniosarosi.github.io/Linked-List-Visualization/).
 
-> Exempel: Låt $L = $ `{2, 3, 5}` vara en länkad lista.
->
-> Hur kan vi sätta in `10` mellan `2` och `3`?
+#### Exempel
 
-Ovan beskrivs en *enkelriktad* länkad lista (eng: *singly linked list*), men den kan även vara *dubbelriktad* (eng: *doubly linked list*). I en dubbelriktad länkad lista pekar varje nod till både nästa nod och föregående nod.
+Låt $L = \lbrace 2, 3, 5 \rbrace$ vara en länkad lista.
 
+Hur kan vi sätta in $10$ mellan $2$ och $3$?
+
+> Ovan beskrivs en *enkelriktad* länkad lista (eng: *singly linked list*), men den kan även vara *dubbelriktad* (eng: *doubly linked list*). I en dubbelriktad länkad lista pekar varje nod till både nästa nod och föregående nod.
+> 
 > Hur kan vi göra $L$ dubbelriktad?
 
 ### Array vs. länkad lista
@@ -143,7 +153,6 @@ Det ni ska göra är:
 
 ## **Sammanfattning**
 
-- HT 2023
-- VT 2024
+- Tillbakablick HT och VT
 - Pekare, NULL, och nästlade klasser
 - Länkad lista
