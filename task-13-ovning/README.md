@@ -74,7 +74,12 @@ Hoppas att alla har haft en fin ledighet.
 Diskutera veckans task i par:
 
 - Hur har det gått?
-- Vad har varit extra svårt?
+    - Vad gick bra?
+    - Vad har varit extra svårt?
+- Skiljer sig era lösningar?
+    - Om ja, hur skiljer de sig?
+    - Om nej, hur skulle man kunna göra annorlunda?
+    - Finns fördelar/nackdelar med de olika sätten?
 
 ### Redovisning
 
@@ -96,8 +101,8 @@ En nästlad klass är en klass som definieras i en annan klass.
 
 Java har [två typer av nästlade klasser](https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html):
 
-- Inner classes (har tillgång till yttre klassens medlemmar (fält och metoder))
-- Static nested classes (har *inte* tillgång till yttre klassens medlemmar)
+- Inner classes (har tillgång till yttre klassens medlemmar (fält och metoder)).
+- Static nested classes (har *inte* tillgång till yttre klassens medlemmar).
 
 ### Länkad lista
 - Består av sammanlänkade noder.
@@ -120,7 +125,7 @@ Hur kan vi sätta in $10$ mellan $2$ och $3$?
 
 ### Array vs. länkad lista
 
-Arrayer har statisk storlek (kan inte ändra storlek) och är sammanhängande i minnet (minnesadresserna kommer direkt efter varandra)
+Arrayer har statisk storlek (kan inte ändra storlek) och är sammanhängande i minnet (minnesadresserna kommer direkt efter varandra).
 
 Länkade listor däremot har dynamisk storlek (kan växa och krympa) och är utspridda i minnet (noderna kan ligga på helt olika platser och behöver inte vara bredvid varandra).
 
