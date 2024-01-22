@@ -152,6 +152,10 @@ Det ni ska göra är:
 
 > Om vi blir klara kan ni börja med `task-14`.
 
+<!--
+Lista (primtal): 2 - 3 - 5 - 7 - 11 - 13 - 17 - 19 - 23 - 29 - 31 ...
+-->
+
 <!-- 1. Bilda par och gå in på https://leetcode.com/problems/valid-parentheses/.
 1. Försök att lösa uppgiften tillsammans med parprogrammering.
 1. Blir ni klara kan ni börja på `task-14`. -->
