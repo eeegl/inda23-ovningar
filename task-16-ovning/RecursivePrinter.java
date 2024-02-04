@@ -3,6 +3,10 @@ import java.util.ArrayList;
 
 /**
  * En enkel klass för att öva på rekursion med listor.
+ * 
+ * @author Örn Segerstedt
+ * @author <DITT NAMN HÄR>
+ * @version 2024-02-04
  */
 public class RecursivePrinter {
     
