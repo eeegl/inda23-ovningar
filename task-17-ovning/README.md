@@ -45,7 +45,7 @@ Lite terminologi:
 | Komponent | Component | Delgraf som är helt avskilt från resten av grafen |
 | Ordning | Order | Antal noder i en (ändlig) graf |
 | Grad/valens (nod) | Degree/valency (node) | Antal bågar mellan en nod och andra noder |
-| Oiktad graf | Undirected graph | Graf där bågar saknar riktning (ritas som streck) |
+| Oriktad graf | Undirected graph | Graf där bågar saknar riktning (ritas som streck) |
 | Riktad graf | Directed graph | Graf där bågar har riktning (ritas som pilar) |
 | Viktad graf | Weighted graph | Graf där bågar har ett värde |
 
