@@ -22,7 +22,7 @@ Diskutera veckans task i par:
     - Om nej, hur skulle man kunna göra annorlunda?
     - Finns fördelar/nackdelar med de olika sätten?
 
-## Nästa vecka (`qiucksort` – Quicksort)
+## Nästa vecka (`quicksort` – Quicksort)
 
 Sista uppgiften i kursen!
 
@@ -79,6 +79,12 @@ Det värsta fallet uppstår när listan är sorterad eller omvänt sorterad och 
 En vanlig är *median of three*, där vi väljer medianen av det första, mellersta och sista elementet i listan. 
 
 En annan metod går ut på att helt enkelt slumpmässigt kasta om ordningen i listan innan vi kör sorteringen. Detta går att göra i linjär tid $\mathcal{O}(n)$. Eftersom jämförelsebaserad sortering inte går att genomföra snabbare än linearitmisk tid $\mathcal{O}(n \log n)$, så vi *tjänar* faktiskt på att lägga till ett extra steg där vi rör om listan linjär tid för att undvika kvadratisk tid $\mathcal{O}(n^2)$.
+
+#### Cutoff med annan sorteringsalgoritm
+
+Ibland används Quicksort i kombination med annan sorteringsalgoritm. Den andra algoritmen kan vara till exempel instickssortering och körs som ett basfall vid ett visst "cutoff"-värde, istället för att vänta tills listorna har storlek ett.
+
+Detta funkar eftersom även kvadratiska sorteringsalgoritmer är relativt snabba för små indatamängder. Man kan dock behöva testa sig fram för att hitta rätt "cutoff"-värde.
 
 ## Kodningsövning
 
