@@ -8,7 +8,7 @@ Veckans övning ser ut såhär:
 - Nytt i `quicksort` – Quicksort
     - Upplägg
     - Quicksort-algoritmen
-- Kodningsuppgift
+- ~~Kodningsuppgift~~
 
 ## Den här veckan (`task-18` – Graphs)
 
