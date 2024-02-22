@@ -10,6 +10,10 @@ Veckans övning ser ut såhär:
     - Quicksort-algoritmen
 - ~~Kodningsuppgift~~
 
+## Info
+
+Deadline för `quicksort` vecka 2 krockar med envarre-tenta, så ni kommer få förlängd inlämningstid på den.
+
 ## Den här veckan (`task-18` – Graphs)
 
 Diskutera veckans task i par:
@@ -28,6 +32,8 @@ Sista uppgiften i kursen!
 
 > OBS: För godkänt i DD1338 krävs godkänt på `quicksort`.
 
+Ni behöver även gå med i kurssidan på [Kattis](https://kth.kattis.com/).
+
 ### Upplägg
 
 Quicksort-uppgiften är utspridd över två veckor:
@@ -36,7 +42,7 @@ Quicksort-uppgiften är utspridd över två veckor:
     - En implementering av instickssortering
     - Fyra implementeringar (varianter) av quicksort
     - Testklasser för alla fem implementeringar
-    - En av quicksort-implementeringarna måste klara testerna på [Kattis](https://kth.kattis.com/)
+    - En av quicksort-implementeringarna måste klara testerna på Kattis
 - **Vecka 2: Analys**
     - En klass för körtidstester
     - En rapport
