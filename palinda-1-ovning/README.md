@@ -75,7 +75,7 @@ Två av de vanligaste problemen som uppstår i samtidiga program är *deadlocks*
 </details>
 
 > Vi tittar på ett exempel.
-</br>
+
 
 ### Metoder i Go
 
@@ -112,7 +112,7 @@ func (p *Person) updateName(name string) {
 }
 
 func main() {
-	p := Person{ "ÖRN" }
+	p := Person{"ÖRN"}
 	p.printName()
 	p.updateName("Örn")
 	p.printName()
@@ -122,7 +122,7 @@ func main() {
 
 ## Kodningsövning
 
-Er uppgift den här veckan är att fixa buggen i [`src/increment.go`](`src/increment.go`).
+Er uppgift den här veckan är att fixa buggen i [`src/increment.go`](src/increment.go).
 
 Börja med att titta igenom koden för att förstå vad den gör.
 
