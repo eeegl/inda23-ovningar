@@ -142,6 +142,7 @@ När ni har kommit underfund med vad som är felet ska ni försöka fixa det. De
 
 <details>
 <summary><b>Tips om ni fastnar</b></summary>
+</br>
 
 Titta på dokumentationen för [`sync`](https://pkg.go.dev/sync), speciellt `sync.Mutex`.
 </details>
