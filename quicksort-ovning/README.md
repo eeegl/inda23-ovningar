@@ -11,6 +11,7 @@ Veckans övning ser ut såhär:
 - Nästa kurs: DD1396
 - Kodningsuppgift
 
+
 ## Info
 
 Deadline för `quicksort`-rapporten har skjutits upp till tisdag 19 mars.
