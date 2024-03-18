@@ -138,4 +138,6 @@ Vad händer om ni höjer `numWorkers` och `incrementCount`? Varför? Vilken typ 
 
 När ni har kommit underfund med vad som är felet ska ni försöka fixa det. Det räcker med två extra rader kod för att fixa buggen, och i koden som är given finns redan alla verktyg som behövs för att lösa uppgiften.
 
+***Tips:** titta på dokumentationen för [`sync`](https://pkg.go.dev/sync), speciellt `sync.Mutex`.*
+
 > Om ni blir klara kan ni börja med `palinda-2`.
