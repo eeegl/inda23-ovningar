@@ -10,7 +10,7 @@ Veckans övning ser ut såhär:
     - Vanliga problem med samtidighet
 		- Deadlock
 		- Data race
-    - `sync.WaitGroup`
+    - Metoder i Go
 - Kodningsuppgift
 
 
