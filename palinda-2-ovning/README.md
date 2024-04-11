@@ -106,7 +106,8 @@ MapReduce består av följande steg:
 4. **Reduce** aggregerar (slår ihop) datan och levererar resultatet.
 
 ![image](imgs/mapreduce.webp)
-*Schematisk bild av MapReduce (tagen från https://medium.com/edureka/mapreduce-tutorial-3d9535ddbe7c).*
+
+*Schematisk bild av MapReduce (tagen från [medium.com](https://medium.com/edureka/mapreduce-tutorial-3d9535ddbe7c)).*
 
 ##### Exempel: räkna ord
 
