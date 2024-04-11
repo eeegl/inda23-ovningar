@@ -90,7 +90,7 @@ foldl (*) 1 [1, 2, 3, 4] = ?
 foldl (++) [] ["H", "a", "s", "k", "e", "l", "l"] = ?
 ```
 
-> Känner ni igen dessa två funktioner?
+> Känner ni igen de två översta funktionerna?
 
 
 #### Hur MapReduce fungerar
