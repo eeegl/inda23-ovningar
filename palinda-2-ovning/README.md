@@ -107,19 +107,19 @@ MapReduce består av följande steg:
 
 ##### Exempel: räkna ord
 
-Antag att vi får ett block med texten $"\text{Car River Car}"$:
+Antag att vi får ett block med texten $\text{"Car River Car"}$:
 
 1. **Map** skapar för varje ord $w$ ett par $(w, 1)$, alltså det räknar ordet en gång:
 
-$$"\text{Car River Car}" \to [ (\text{"Car"}, 1), (\text{"River"}, 1), (\text{"Car"}, 1)] $$
+$$\text{"Car River Car"} \to [ (\text{"Car"}, 1), \ (\text{"River"}, 1), \ (\text{"Car"}, 1)] $$
 
 2. **Shuffle** grupperar och sorterar alla ord (efter nyckeln):
 
-$$[ (\text{"Car"}, 1), (\text{"River"}, 1), (\text{"Car"}, 1)] \to [(\text{"Car"}, \lbrace 1, 1 \rbrace), (\text{"River"}, \lbrace 1 \rbrace)]$$
+$$[ (\text{"Car"}, 1), \ (\text{"River"}, 1), \ (\text{"Car"}, 1)] \to [(\text{"Car"}, \ \lbrace 1, 1 \rbrace), \ (\text{"River"}, \lbrace 1 \rbrace)]$$
 
 3. **Reduce** räknar ihop alla förekomster för varje unikt ord:
 
-$$[(\text{"Car"}, \lbrace 1, 1 \rbrace), (\text{"River"}, \lbrace 1 \rbrace] \to [(\text{"Car"}, 2 ), (\text{"River"}, 1 )]$$
+$$[(\text{"Car"}, \lbrace 1, 1 \rbrace), \ (\text{"River"}, \lbrace 1 \rbrace)] \to [(\text{"Car"}, 2 ), \ (\text{"River"}, 1 )]$$
 
 Och nu har vi räknat alla ord!
 
