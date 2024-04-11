@@ -73,6 +73,8 @@ map ("" ++) ["hello", "world"] = ?
 
 Reduce tar en binär operation (en funktion med två parametrar), ett startelement och en lista, och ger ett element. Det nya elementet fås genom att börja med startelementet, sen "stoppa in" den binära operatorn mellan varje element i listan, och till sist "slå ihop" resultatet. I Haskell kallas Reduce för `foldl`.
 
+> Namnet `foldl` är en förkortning av *fold left*. Ordet *fold* används eftersom vi "viker ihop" alla element till ett enda, och *left* anger att den binära operatorn är *vänsterassociativ*.
+
 
 ##### Exempel: summering av tal
 
@@ -80,7 +82,8 @@ Reduce tar en binär operation (en funktion med två parametrar), ett starteleme
 -- [1, 2, 3, 4] är en lista med talen 1, 2, 3 och 4
 
 -- (+) är vanlig addition
-foldl (+) 0 [1, 2, 3, 4] = 0 + 1 + 2 + 3 + 4
+foldl (+) 0 [1, 2, 3, 4] = ((((0 + 1) + 2) + 3) + 4) -- Vänsterassociativ operation
+                         = 0 + 1 + 2 + 3 + 4         -- "+" är associativ, så ordning spelar ingen roll
                          = 10
 
 -- Vad blir detta?
