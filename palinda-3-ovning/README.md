@@ -65,7 +65,7 @@ De olika "tillstånden" för en fil i Git:
 
 ![image](./imgs/git-kretslopp.png)
 
-*De olika stadierna i Git-processen.*
+*De olika tillstånden för en Git-fil.*
 
 #### Vanliga kommandon
 
