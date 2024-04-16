@@ -52,7 +52,7 @@ git commit -m "Skapar my_file.txt"
 
 och på samma sätt för `README.md`. Kolla gärna statusen innan du gör varje commit, så ser du att Git har registrerat att filen kommer att komma med i commit:en.
 
-> **⚠️ OBS: om du bara skriver `git commit` (utan `-m` och meddelandet) öppnas den förinställda textredigeraren. Har du [Vim](https://sv.wikipedia.org/wiki/Vim_(textredigerare)) inställt kan det vara svårt att hitta ut, men [det går](https://builtin.com/articles/how-to-exit-vim). ⚠️**
+> **⚠️ OBS: om du bara skriver `git commit` (utan `-m` och meddelandet) öppnas den förinställda textredigeraren. Har du [Vim](https://sv.wikipedia.org/wiki/Vim_(textredigerare)) inställt kan det vara svårt att hitta ut, men [det går](https://builtin.com/articles/how-to-exit-vim).️**
 
 Anledningen till varför vi gör fler små commits är att när vi sedan kollar igenom commit-historiken, så får vi en mycket bättre överblick av alla förändringar som har skett. Annars klumpas allting ihop till en enda **MEGAFÖRÄNDRING** och det blir svårt att hitta det man letar efter.
 
