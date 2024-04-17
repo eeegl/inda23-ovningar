@@ -52,7 +52,8 @@ git commit -m "Skapar my_file.txt"
 
 och på samma sätt för `README.md`. Kolla gärna statusen innan du gör varje commit, så ser du att Git har registrerat att filen kommer att komma med i commit:en.
 
-> **⚠️ OBS: om du bara skriver `git commit` (utan `-m` och meddelandet) öppnas den förinställda textredigeraren. Har du [Vim](https://sv.wikipedia.org/wiki/Vim_(textredigerare)) inställt kan det vara svårt att hitta ut, men [det går](https://builtin.com/articles/how-to-exit-vim).️**
+> [!WARNING]
+> Om du bara skriver `git commit` (utan `-m` och meddelandet) öppnas den förinställda textredigeraren. Har du [Vim](https://sv.wikipedia.org/wiki/Vim_(textredigerare)) inställt kan det vara svårt att hitta ut, men [det går](https://builtin.com/articles/how-to-exit-vim).️
 
 Anledningen till varför vi gör fler små commits är att när vi sedan kollar igenom commit-historiken, så får vi en mycket bättre överblick av alla förändringar som har skett. Annars klumpas allting ihop till en enda **MEGAFÖRÄNDRING** och det blir svårt att hitta det man letar efter.
 
@@ -107,6 +108,8 @@ Kommandot används generellt för att hantera branches i Git, mer om det senare.
 
 Ni känner ju redan till `git push`, men här används flaggan `-u` för att koppla en lokal branch till en remote. I det här fallet kopplar vår *lokala branch* `main` till vår *remote branch* `main` på vårt *remote repo* `origin`. På så sätt vet Git vilken branch den ska hämta och skicka till med `git push` och `git pull`.
 
+> Så alla tre kommandon gör rimliga saker, och det är inte så konstigt egentligen!
+
 ### 1.4 Sammanfattning
 
 Snyggt jobbat! Efter den här delen har du förhoppningsvis fått en lite bättre förståelse för grunderna i Git och GitHub, och hur man kommer igång med ett repo. Du har alltså:
@@ -117,8 +120,8 @@ Snyggt jobbat! Efter den här delen har du förhoppningsvis fått en lite bättr
 - Commit:at filer med `git commit`
 - Sett commit-historiken med `git log` och `git log --oneline`
 - Kopplat ditt lokala repo till GitHub med `git add origin`
-- Skapat en ny branch med `git branch`
-- Laddat upp dina filer på GitHub med `git push`
+- Döpt om din branch med `git branch`
+- Kopplat din branch och laddat upp dina filer på GitHub med `git push`
 
 I nästa del kommer du att få lära dig hur man *ångrar sig*, något som händer mer ofta än man kanske skulle vilja.
 
