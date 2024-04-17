@@ -1,9 +1,8 @@
 # Intro till Git och GitHub
 
-Det här dokumentet är en guide med syfte att ge dig en interaktiv introduktion till Git och GitHub. Förhoppningsvis kan du ha användning av den både före och under (och kanske till och med efter) projektet.
+Det här dokumentet är en guide med syfte att ge dig en interaktiv introduktion till Git och GitHub. Förhoppningsvis kan du ha användning av den både före och under (och kanske till och med efter) projektet. Det gör inget om du inte hinner med allt just nu.
 
-Guiden är rätt lång, så det gör inget om du inte hinner med allt.
-
+> [!TIP]
 > Referera gärna till [Git-lathunden](git-lathund.md) under guidens gång.
 
 #### Innehåll
@@ -52,7 +51,10 @@ git commit -m "Skapar my_file.txt"
 
 och på samma sätt för `README.md`. Kolla gärna statusen innan du gör varje commit, så ser du att Git har registrerat att filen kommer att komma med i commit:en.
 
-> [!WARNING]
+<!-- [!WARNING] är GitHub-specifik syntax,
+     se mer här: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts
+     -->
+> [!WARNING] 
 > Om du bara skriver `git commit` (utan `-m` och meddelandet) öppnas den förinställda textredigeraren. Har du [Vim](https://sv.wikipedia.org/wiki/Vim_(textredigerare)) inställt kan det vara svårt att hitta ut, men [det går](https://builtin.com/articles/how-to-exit-vim).️
 
 Anledningen till varför vi gör fler små commits är att när vi sedan kollar igenom commit-historiken, så får vi en mycket bättre överblick av alla förändringar som har skett. Annars klumpas allting ihop till en enda **MEGAFÖRÄNDRING** och det blir svårt att hitta det man letar efter.
