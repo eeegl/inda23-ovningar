@@ -1,6 +1,6 @@
 # Intro till Git och GitHub
 
-Det här dokumentet är en guide med syfte att ge dig en interaktiv introduktion till Git och GitHub. Förhoppningsvis kan du ha användning av den både före och under (och kanske till och med efter) projektet. Det gör inget om du inte hinner med allt just nu.
+Det här dokumentet är en guide med syfte att ge dig en interaktiv introduktion till Git och GitHub. Förhoppningsvis kan du ha användning av den både före och under (och kanske till och med efter) projektet. Det gör inget om du inte hinner med allt under övningen.
 
 > [!TIP]
 > Referera gärna till [Git-lathunden](git-lathund.md) under guidens gång.
@@ -19,13 +19,13 @@ I den här delen kommer du att skapa ett nytt lokalt Git-repo, lägga till någr
 
 ### 1.1 Att starta ett Git-repo
 
-Först och främst behöver du skapa en tom mapp. Navigera sedan in i mappen och initalisera den som ett Git-repo:
+Först och främst behöver du skapa en tom mapp. Navigera sedan in i mappen och initalisera den som ett Git-repo med:
 
 ```bash
 git init
 ```
 
-Kolla sedan statusen för Git:
+Kolla sedan statusen för Git med:
 
 ```bash
 git status
@@ -57,9 +57,11 @@ och på samma sätt för `README.md`. Kolla gärna statusen innan du gör varje 
 > [!WARNING] 
 > Om du bara skriver `git commit` (utan `-m` och meddelandet) öppnas den förinställda textredigeraren. Har du [Vim](https://sv.wikipedia.org/wiki/Vim_(textredigerare)) inställt kan det vara svårt att hitta ut, men [det går](https://builtin.com/articles/how-to-exit-vim).️
 
-Anledningen till varför vi gör fler små commits är att när vi sedan kollar igenom commit-historiken, så får vi en mycket bättre överblick av alla förändringar som har skett. Annars klumpas allting ihop till en enda **MEGAFÖRÄNDRING** och det blir svårt att hitta det man letar efter.
+Anledningen till varför vi gör fler små commits är att när vi sedan kollar igenom commit-historiken, så får vi en mycket bättre överblick av alla förändringar som har skett. Annars klumpas allting ihop till en enda **MEGAFÖRÄNDRING** och det blir svårt att hitta det man letar efter (till exempel om man vill gå tillbaka till en specifik ändring för att se om den introducerade en ny bugg).
 
-Kolla statusen för Git igen, nu borde allt vara tomt. Vid den här tidpunkten vill du kanske se vilka commits du har gjort. Detta gör du med:
+Kolla statusen för Git igen, nu borde allt vara tomt.
+
+Vid den här tidpunkten vill du kanske se vilka commits du har gjort. Detta gör du med:
 
 ```bash
 git log
@@ -92,25 +94,24 @@ git push -u origin main
 
 Sedan kan du uppdatera sidan på GitHub för att kontrollera att dina filer har laddats upp ordentligt.
 
-Men vad är det vi precis har gjort? För att förstå vad som händer så dissikerar vi alla kommandon:
-
-#### `git remote add`
-
-Med detta kommando kopplar vi ett *remote*-repo till vårt lokala repo.
-
-Remote översätts till svenska som *avlägsen*, alltså anger vi ett avlägset repo som lokala filer ska skickas till och hämtas från när vi kör `git push` respektive `git pull`.
-
-I vårt fall innebär det att vi säger vilket GitHub-repo vi vill använda. Det första argumentet anger förinställt remote-repo (`origin` är konvention). Som andra argument ges en URL till repot.
-
-#### `git branch`
-
-Kommandot används generellt för att hantera branches i Git, mer om det senare. Flaggan `-M` tvingar den nuvarande branch:en add döpas om, i det här fallet till `main`.
-
-#### `git push`
-
-Ni känner ju redan till `git push`, men här används flaggan `-u` för att koppla en lokal branch till en remote. I det här fallet kopplar vår *lokala branch* `main` till vår *remote branch* `main` på vårt *remote repo* `origin`. På så sätt vet Git vilken branch den ska hämta och skicka till med `git push` och `git pull`.
-
-> Så alla tre kommandon gör rimliga saker, och det är inte så konstigt egentligen!
+> [!NOTE]
+> Om du är intresserad av att förstå exakt vad som hände när du copy paste:ade kommandona så tar vi en lite närmare titt:
+> 
+> #### `git remote add`
+> 
+> Med detta kommando kopplar vi ett *remote*-repo till vårt lokala repo.
+> 
+> Remote översätts till svenska som *avlägsen*, alltså anger vi ett avlägset repo som lokala filer ska skickas till och hämtas från när vi kör `git push` respektive `git pull`.
+> 
+> I vårt fall innebär det att vi säger vilket GitHub-repo vi vill använda. Det första argumentet anger förinställt remote-repo (`origin` är konvention). Som andra argument ges en URL till repot.
+> 
+> #### `git branch`
+> 
+> Kommandot används generellt för att hantera branches i Git, mer om det senare. Flaggan `-M` tvingar den nuvarande branch:en add döpas om, i det här fallet till `main`.
+> 
+> #### `git push`
+> 
+> Ni känner ju redan till `git push`, men här används flaggan `-u` för att koppla en lokal branch till en remote. I det här fallet kopplar vår *lokala branch* `main` till vår *remote branch* `main` på vårt *remote repo* `origin`. På så sätt vet Git vilken branch den ska hämta och skicka till med `git push` och `git pull`.
 
 ### 1.4 Sammanfattning
 
