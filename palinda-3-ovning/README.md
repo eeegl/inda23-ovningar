@@ -31,7 +31,7 @@ Diskutera veckans task i par:
 
 Kortfattat gäller följande (mer detaljer nästa övning):
 
-- Arbete sker i par
+- Arbete sker i par (inom TA-gruppen)
 - Programspråk är valfritt
 - Projektidéer måste godkännas innan ni börjar
 - Ni bedöms på *projektet*, inte på *koden*
