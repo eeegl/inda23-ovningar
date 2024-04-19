@@ -128,6 +128,12 @@ GitHub erbjuder bland annat:
 - Projects (yta för projektplanering/Kanban)
 - Actions (koppla funktionalitet till händelser)
 
+## Enkät
+
+Vi har gjort en studie om quizzen som ni har fått göra innan varje task, och nu behöver vi få lite feedback från er!
+
+Om ni går in på kurssidan på Canvas så finns det länk till en enkät att fylla i (det tar cirka fem minuter).
+
 ## Kodningsövning: intro till Git och GitHub
 
 Som förberedelse inför projektet kommer här en uppvärmning med Git och GitHub. Uppgiften är ganska lång, så det gör inget om du inte hinner klart innan övningen är slut. Du kan även referera till den här senare under projektet om du vill.
