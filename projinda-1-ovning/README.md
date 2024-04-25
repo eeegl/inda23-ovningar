@@ -45,8 +45,8 @@ Fyra veckor, tre övningar:
 
 ### Murphys lag
 
-> *"Om något kan gå snett kommer det att gå snett."* \
-> \- Murphy
+*"Om något kan gå snett kommer det att gå snett."* \
+— Murphy
 
 > [!IMPORTANT]
 > Saker kommer att ta gå fel och ta längre tid än ni tror, planera för det.
