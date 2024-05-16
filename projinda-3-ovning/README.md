@@ -4,7 +4,7 @@ Veckans övning ser ut såhär:
 
 - Demo
 - Fika
-- 
+- Testa Canvas AI Copilot
 
 ## Demo
 
@@ -17,7 +17,7 @@ Alla grupper presenterar/demar sitt projekt och berättar lite om processen!
 ## Fika!
 ### 🧃🧃🧃 och 🍪🍪🍪
 
-Nu är ni fria från INDA-kursen!
+En sista grej: gå in och testa Canvas AI Copilot, sedan är ni fria från INDA-kursen!
 
 Tack för det här året och lycka till i framtiden.
 
